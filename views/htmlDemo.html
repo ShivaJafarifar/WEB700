@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	thead {color: green;}
+	tbody {color: blue;}
+	tfoot {color: red;}
+
+	table, th, td {
+	  border: 1px solid black;  
+	}
+
+	img{
+		height: 300px; 
+		width: 300px; 
+	}
+	</style>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/theme.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Shiva Jafarifar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+					<li class="nav-item"><a class="nav-link" href="/students/add">Add Student</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+					<!-- Start your code here -->
+					<p/>
+					<p> Welcome to the Demo page (The HTML Demo page will be the busiest page and will consist of a playground for us to practice creating HTML elements. The page will be divided into sections, with each section starting with a relevant header ie, "Tables", "Lists", etc.) </p>
+					<h2>Introduction </h2>
+					<p>Here is my information (My name is Shiva Jafari far my student number :169302213 my course is Database Application Design (DAD))</p>
+					<div id="tableSection">
+						<h2>A basic HTML table</h2>
+						<table style="width: 50%; margin-left:auto;margin-right:auto;">
+						  <caption style="caption-side:top;">Invoice</caption>
+						  <thead>
+							<tr>
+								<th>Item</th>
+								<th>Qty</th>
+								<th>Price</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							  <tr>
+								<td>Shirt</td>
+								<td>1 pice</td>
+								<td rowspan="2">$300</td>
+							  </tr>
+							  <tr>
+								<td>Pants</td>
+								<td>2 pairs</td>
+							  </tr>
+							  <tr>
+								<td>Shoes</td>
+								<td>2 pairs</td>
+								<td >$300</td>
+							  </tr>
+							  <tr>
+								<td>jacket</td>
+								<td>2 pice</td>
+								<td >$200</td>
+							  </tr>
+							  <tr>
+								<td>glove</td>
+								<td>2 pairs</td>
+								<td >$100</td>
+							  </tr>
+						  </tbody>
+						  <tfoot>
+							  <tr>
+								<td colspan="2">Sum</td>
+								<td>$900</td>
+							  </tr>
+						  </tfoot>
+						</table>
+						
+						<p style="text-align:center">the above table is an exapmple for a simple invoice.</p>
+					</div>
+					<div id="listSection">
+						<h2>A basic HTML list</h2>
+						<ol>
+						  <li>Coffee
+							<ul>
+							  <li>Light roast</li>
+							  <li>Medium roast</li>
+							  <li>Dark roast</li>
+							</ul>  
+						  </li>
+						  <li>Tea</li>
+						  <li>Milk</li>
+						  <li>Coke</li>
+						  <li>Water</li>
+						</ol> 
+						<p>the above list is an exapmple for a simple drink menu.</p>
+					</div>
+					<div id="imageSection">
+						<h2>A basic HTML image</h2>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder" style="width:33%">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Golden-crowned_kinglet_at_JBWR_%2811835%29.jpg/1024px-Golden-crowned_kinglet_at_JBWR_%2811835%29.jpg" alt="Golden crowned kinglet" style="width:33%">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Wikimedia_Hackathon_Prague_2019_-_Group_Photo_-_CLK_-_cropped.jpg/1280px-Wikimedia_Hackathon_Prague_2019_-_Group_Photo_-_CLK_-_cropped.jpg" alt="Wikimedia Hackathon" style="width:33%">
+						<p>the above images are an exapmple for a simple HTML image.</p>
+					</div>
+					<div id="audioSection">
+						<h2>A basic HTML audio</h2>
+
+						<audio controls>
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.mp3" type="audio/mpeg">
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.ogg" type="audio/ogg">
+							Your browser does not support the audio element.
+						</audio>
+						<p>the above Audio is an exapmple for a simple HTML audio.</p>
+
+					</div>
+					<div id="videoSection">
+						<h2>A basic HTML video</h2>
+						<video width="320" height="240" controls>
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.mp4" type="video/mp4">
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.ogg" type="video/ogg">
+						  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.webm" type="video/webcam">
+						Your browser does not support the video tag.
+						</video>
+						<p>the above Video is an exapmple for a simple HTML video.</p>
+					</div>
+					<!-- End your code here  -->
+
+
+
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
