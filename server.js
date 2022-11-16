@@ -6,7 +6,7 @@
 * 
 * Name: Shiva Jafari far Student ID: 169302213 Date: November 15th 
 *
-* Online (Cyclic) Link:
+* Online (Cyclic) Link: https://easy-erin-indri-cape.cyclic.app  https://shiva-jafarifar.cyclic.app/
 * 
 ********************************************************************************/
 const cd = require('./modules/collegeData.js');
