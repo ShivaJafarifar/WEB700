@@ -45,10 +45,11 @@ a.nav-link{
     background: linear-gradient( to right, red, green);
 	-webkit-box-shadow: 14px 13px 17px -6px rgba(0,0,0,0.73);
 }
+/*
 tr:nth-child(odd):not(:first-child) {
     background: linear-gradient( to right, gray, red);
 }
-
+*/
 h1,h2,h3,h4,h5,h6{
 	color: blue;
 }
